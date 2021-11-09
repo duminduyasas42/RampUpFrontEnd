@@ -1,0 +1,25 @@
+<div class="k-block">
+  <button kendoButton [look]="'default'">Add Student</button>
+  <button kendoButton [look]="'default'">Add Students csv</button>
+</div>
+<kendo-grid [data]="gridData">
+  <kendo-grid-column field="StudentID" title="ID"> </kendo-grid-column>
+  <kendo-grid-column field="StudentName" title="Name"> </kendo-grid-column>
+  <kendo-grid-column field="Gender" title="Gender"> </kendo-grid-column>
+  <kendo-grid-column field="Address" title="Address"> </kendo-grid-column>
+  <kendo-grid-column field="MobileNo" title="Mobile No"> </kendo-grid-column>
+  <kendo-grid-column field="DateOfBirth" title="Date of Birth"> </kendo-grid-column>
+  <kendo-grid-column field="Age" title="Age"> </kendo-grid-column>
+  <kendo-grid-column
+        field="actions"
+        title="Actions"
+      >
+      <ng-template kendoGridCellTemplate>
+        <button kendoButton>Edit</button>
+        <button kendoButton>Delete</button>
+    </ng-template>
+        
+      </kendo-grid-column>
+ 
+  
+</kendo-grid>
